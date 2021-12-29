@@ -42,10 +42,20 @@ public class LineLengthComputation{
 		}
 	}
 
+	public void compareTo(){
+		if(length1==length2){
+			System.out.println("Lines are equal");
+		}else if(length1>length2){
+			System.out.println("line 1 is greater than line 2");
+		}else{
+			System.out.println("Line 1 is less than line 2");
+		}
+	}
         public static void main(String[] args) {
                 LineLengthComputation line = new LineLengthComputation();
                 line.getcoordinates();
                 line.lengthCalculation();
 		line.ifEquals();
+		line.compareTo();
 	}
 }
