@@ -26,17 +26,26 @@ public class LineLengthComputation{
 
 
 
-    public void lengthCalculation() {
-        length1 = Math.sqrt((x2 - x1)^2 + (y2 - y1)^2);
-        System.out.println("Length of first line = " + length1 + " units");
-        length2 = Math.sqrt((x4 - x3)^2 + (y4 - y3)^2);
-        System.out.println("Length of second line = " + length2 + " units");
-    }
+	public void lengthCalculation() {
+        	length1 = Math.sqrt((x2 - x1)^2 + (y2 - y1)^2);
+        	System.out.println("Length of first line = " + length1 + " units");
+        	length2 = Math.sqrt((x4 - x3)^2 + (y4 - y3)^2);
+        	System.out.println("Length of second line = " + length2 + " units");
+	}
 
+	public void ifEquals(){
+		if(length1==length2){
+			System.out.println("Lines are equal");
+		}
+		else{
+			System.out.println("Lines are not equal");
+		}
+	}
 
         public static void main(String[] args) {
                 LineLengthComputation line = new LineLengthComputation();
                 line.getcoordinates();
                 line.lengthCalculation();
-    }
+		line.ifEquals();
+	}
 }
