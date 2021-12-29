@@ -48,6 +48,30 @@ public class EmployeeWageUsingFunctions{
 	 }
 
 
+	 public static void partTimeEmployee() {
+                 System.out.println("***********************************************************************");
+                 System.out.println("Use Case 3");
+
+                int EmployeWages = 0;
+                int EmployeHour = 0;
+                double EmpCheck = Math.floor(Math.random() * 10) % 3;
+                if (EmpCheck == IsFullTime)
+                {
+                    System.out.println("Employee is Fulltime working");
+                    EmployeHour = 8;
+                }
+                else if (EmpCheck == IsPartTime)
+                {
+                    System.out.println("Employee is part time working");
+                    EmployeHour = 4;
+                }
+                else
+                {
+                    EmployeHour = 0;
+                }
+                EmployeWages = EmployeHour * EmployeRatePerHour;
+                System.out.println("Employewage: " + EmployeWages );
+        }
 
 
 
@@ -55,5 +79,8 @@ public class EmployeeWageUsingFunctions{
  	public static void main(String[] args){
                 EmployeeWageUsingFunctions emp = new EmployeeWageUsingFunctions();
                 emp.welcomeMessage();
+		emp.employeeCheck();
+                emp.dailyWage();
+                emp.partTimeEmployee();
 	}
 }
