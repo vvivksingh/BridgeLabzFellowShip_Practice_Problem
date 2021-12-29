@@ -121,6 +121,35 @@ public class EmployeeWageUsingFunctions{
                 System.out.println("TotalEmployewage: " + TotalEmployeWage );
         }
 
+	public void totalWorkingHourCondition() {
+                System.out.println("***********************************************************************");
+                System.out.println("Use Case 6");
+                int EmployeWages = 0;
+                int TotalEmployeHour = 0;
+                int TotalEmployeWage = 0;
+                int TotalWorkingDays = 0;
+                while (TotalWorkingDays < NoWorkingDays && TotalEmployeHour <= HourInMonth) {
+                    int EmployeHour = 0;
+                    TotalWorkingDays++;
+                    int EmployeCheck = (int) Math.floor(Math.random() * 10) % 3;
+                    switch (EmployeCheck) {
+                        case IsFullTime:
+                            EmployeHour = 8;
+                            break;
+                        case IsPartTime:
+                            EmployeHour = 4;
+                            break;
+                        default:
+                            EmployeHour = 0;
+                    }
+                    TotalEmployeHour += EmployeHour;
+                    EmployeWages = EmployeHour * EmployeRatePerHour;
+                    TotalEmployeWage += EmployeWages;
+                    System.out.println("Employewage: " + EmployeWages );
+                }
+                System.out.println("TotalEmployewage: " + TotalEmployeWage );
+        }
+
 
  	public static void main(String[] args){
                 EmployeeWageUsingFunctions emp = new EmployeeWageUsingFunctions();
@@ -130,5 +159,6 @@ public class EmployeeWageUsingFunctions{
                 emp.partTimeEmployee();
 		emp.switchUCaseUses();
 		emp.empWageForMonth();
+		emp.totalWorkingHourCondition();
 	}
 }
