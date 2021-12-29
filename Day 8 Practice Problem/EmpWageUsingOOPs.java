@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class EmployeeWageUsingFunctions{
+public class EmpWageUsingOOPs{
         public static final int EmployeRatePerHour = 20;
         public static final int NoWorkingDays = 20;
         public static final int HourInMonth = 100;
@@ -152,7 +152,7 @@ public class EmployeeWageUsingFunctions{
 
 
  	public static void main(String[] args){
-                EmployeeWageUsingFunctions emp = new EmployeeWageUsingFunctions();
+                EmpWageUsingOOPs emp = new EmpWageUsingOOPs();
                 emp.welcomeMessage();
 		emp.employeeCheck();
                 emp.dailyWage();
