@@ -73,6 +73,26 @@ public class EmployeeWageUsingFunctions{
                 System.out.println("Employewage: " + EmployeWages );
         }
 
+	 public void switchUCaseUses() {
+                System.out.println("***********************************************************************");
+                System.out.println("Use Case 4");
+
+                int EmployeWages = 0;
+                int EmployeHour = 0;
+                int EmployeCheck = (int) Math.floor(Math.random() * 10) % 3;
+                switch (EmployeCheck) {
+                    case IsFullTime:
+                        EmployeHour = 8;
+                        break;
+                    case IsPartTime:
+                        EmployeHour = 4;
+                        break;
+                    default:
+                        EmployeHour = 0;
+                }
+                 EmployeWages = EmployeHour * EmployeRatePerHour;
+                 System.out.println("Employewage: " + EmployeWages );
+        }
 
 
 
@@ -82,5 +102,6 @@ public class EmployeeWageUsingFunctions{
 		emp.employeeCheck();
                 emp.dailyWage();
                 emp.partTimeEmployee();
+		emp.switchUCaseUses();
 	}
 }
