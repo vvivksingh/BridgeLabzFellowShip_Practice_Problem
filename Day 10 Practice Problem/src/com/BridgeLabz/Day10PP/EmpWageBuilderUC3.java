@@ -14,6 +14,7 @@ public class EmpWageBuilderUC3 {
             System.out.println("Employee is Present");
         }
         else if(empCheck == IS_PART_TIME) {
+            System.out.println("Employee is Part Time");
             empHours = 4;
         }
         else{
