@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day10PP;
+package com.BridgeLabz.Day10.EmpWage;
 
 public class EmpWageBuilderUC3 {
     public static void main(String[] args) {

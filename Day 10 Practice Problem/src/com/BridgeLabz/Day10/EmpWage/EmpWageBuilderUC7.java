@@ -1,18 +1,19 @@
-package com.BridgeLabz.Day10PP;
+package com.BridgeLabz.Day10.EmpWage;
 
-import sun.corba.Bridge;
-
-public class EmpWageBuilderUC8 {
+public class EmpWageBuilderUC7 {
     public static final int IS_FULL_TIME =1;
     public static final int IS_PART_TIME = 2;
+    public static final int EMP_RATE_PER_HOUR = 20;
+    public static final int NO_OF_WORKING_DAYS = 20;
+    public static final int MAX_WORKING_HOURS_IN_MONTH = 100;
 
-    public static int calculateWageForCompany(String company, int empRatePerHour, int noOfWorkingDays,
-                                    int maxWorkingHourPerMonth) {
+    public static int calculateWage() {
+
         int empHours = 0;
         int total_empHrs = 0;
         int totalWorkingDay = 0;
 
-        while (total_empHrs <= maxWorkingHourPerMonth && totalWorkingDay < noOfWorkingDays) {
+        while (total_empHrs <= MAX_WORKING_HOURS_IN_MONTH && totalWorkingDay < NO_OF_WORKING_DAYS) {
             totalWorkingDay++;
             int empCheck = (int) Math.floor(Math.random() * 10) % 3;
             switch (empCheck) {
@@ -31,13 +32,14 @@ public class EmpWageBuilderUC8 {
             }
             total_empHrs += empHours;
         }
-        int total_empWage = total_empHrs * empRatePerHour;
-        System.out.println("Total employe wage for "+ company +" is "+ total_empWage);
+        int total_empWage = total_empHrs * EMP_RATE_PER_HOUR;
+        System.out.println("Total Employee Wage : "+ total_empWage);
+        System.out.println("Total Employee Hours : "+ total_empHrs);
+        System.out.println("Total Working Days : "+ totalWorkingDay);
         return total_empWage;
     }
 
     public static void main(String[] args) {
-        calculateWageForCompany("BridgeLabz",15,20,80);
-        calculateWageForCompany("Mastercard",125,18,100);
+        calculateWage();
     }
 }

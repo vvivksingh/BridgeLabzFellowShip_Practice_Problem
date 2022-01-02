@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day10PP;
+package com.BridgeLabz.Day10.EmpWage;
 
 public class EmpWageBulderUC6 {
     public static final int IS_FULL_TIME =1;

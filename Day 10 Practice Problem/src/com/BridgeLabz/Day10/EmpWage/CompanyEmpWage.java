@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day10PP;
+package com.BridgeLabz.Day10.EmpWage;
 
 public class CompanyEmpWage {
     public final String company;

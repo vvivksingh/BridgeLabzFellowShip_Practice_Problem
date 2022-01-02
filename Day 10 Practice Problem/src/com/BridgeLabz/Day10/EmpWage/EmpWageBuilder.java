@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day10PP;
+package com.BridgeLabz.Day10.EmpWage;
 import java.util.*;
 
 import java.util.LinkedList;
