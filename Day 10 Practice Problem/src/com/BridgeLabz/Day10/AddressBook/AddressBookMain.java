@@ -72,10 +72,30 @@ public class AddressBookMain {
 
         return contact;
     }
+    //Use case 3: Edit existing details
+    // Returns the index of contact details of a person in address book
+    public int searchExistingContact() {
+        int index = -1;
+        int tempIndex = -1;
+        for (ArrayList<String> i : AddressBookMain.addressBook) {
+            // find index of arraylist in which the given name is there
+            tempIndex++;
+            for (String j : i) {
+                // if name is found
+                String searchPerson = new String();
+                if (j.equals(searchPerson)) {
+                    index = tempIndex;
+                    break;
+                }
+            }
+        }
+        return index;
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to Address Book Program!");
         AddressBookMain contactDetails = new AddressBookMain();
         contactDetails.addContact();
+        contactDetails.searchExistingContact();
     }
 }
