@@ -75,7 +75,7 @@ public class AddressBookMain {
         return contact;
     }
     //Use case 3: Edit existing details
-    // Returns the index of contact details of a person in address book
+
     public int searchExistingContact() {
         int index = -1;
         int tempIndex = -1;
@@ -115,11 +115,22 @@ public class AddressBookMain {
         // delete the details of person
         AddressBookMain.addressBook.remove(index);
     }
+    //Use case 5 :Add multiple person to address book
+    public void addMultiplePerson() {
+        System.out.println("Enter the number of persons whose details you want " + "to add to the address book");
+        Scanner sc = new Scanner(System.in);
+        int no_of_person = sc.nextInt();
+        for (int i = 1; i <= no_of_person; i++) {
+            addContact();
+        }
+    }
 
     public static void main(String[] args) {
         System.out.println(greeting);
         AddressBookMain contactDetails = new AddressBookMain();
         contactDetails.addContact();
         contactDetails.searchExistingContact();
+        contactDetails.deleteExistingContact();
+        contactDetails.addMultiplePerson();
     }
 }
