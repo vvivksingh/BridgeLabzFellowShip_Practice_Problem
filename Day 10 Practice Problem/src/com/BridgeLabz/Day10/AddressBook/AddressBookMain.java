@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AddressBookMain {
+    //Greeting Message
+    static String greeting = ("**Welcome to Employee Wage Computation Program**");
     // Create an arraylist to store contact details of all the persons
     public static final ArrayList<ArrayList<String>> addressBook = new ArrayList<>();
 
@@ -91,9 +93,31 @@ public class AddressBookMain {
         }
         return index;
     }
+    // to change the contact details
+    public void editExistingContact() {
+        System.out.println("Enter the name of the person whose details you " + "want to be changed");
+        Scanner sc = new Scanner(System.in);
+        String searchPerson = sc.next();
+        int index = searchExistingContact();
+        System.out.println("Found the name, Kindly enter new details ");
+        // Ask for the new details
+        ArrayList<String> contact = enterContactDetails();
+        // Modify the values in the arrayList
+        AddressBookMain.addressBook.set(index, contact);
+    }
+    //Use case 4: Delete an existing person contact using his name in address book
+    public void deleteExistingContact() {
+        System.out.println("Enter the name of the person whose details you " + "want to be deleted");
+        Scanner sc = new Scanner(System.in);
+        String searchPerson = sc.next();
+        // Fetch the index of person in address book
+        int index = searchExistingContact();
+        // delete the details of person
+        AddressBookMain.addressBook.remove(index);
+    }
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Address Book Program!");
+        System.out.println(greeting);
         AddressBookMain contactDetails = new AddressBookMain();
         contactDetails.addContact();
         contactDetails.searchExistingContact();
