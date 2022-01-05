@@ -1,7 +1,7 @@
 package com.BridgeLabz.Day14.LinkedList;
 
 public class LListUC5 extends LListUC4{
-    //Use case 5
+    //Use case 5 deleting first node
     public static void pop() {
         Node currentNode = head.next;
         head.next = null;

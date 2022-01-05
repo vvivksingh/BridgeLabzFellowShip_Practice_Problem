@@ -1,6 +1,6 @@
 package com.BridgeLabz.Day14.LinkedList;
 
-//Use Case 4
+//Use Case 4 inserting element in between
 public class LListUC4{
     static Node head;
     static class Node {
