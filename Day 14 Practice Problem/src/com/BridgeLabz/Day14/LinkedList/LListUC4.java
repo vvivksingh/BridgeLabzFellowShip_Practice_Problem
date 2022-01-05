@@ -2,10 +2,10 @@ package com.BridgeLabz.Day14.LinkedList;
 
 //Use Case 4
 public class LListUC4{
-    private static Node head;
+    static Node head;
     static class Node {
-        private  int data;
-        private Node next;
+        int data;
+        Node next;
 
         public Node(int data) {
             this.data = data;
