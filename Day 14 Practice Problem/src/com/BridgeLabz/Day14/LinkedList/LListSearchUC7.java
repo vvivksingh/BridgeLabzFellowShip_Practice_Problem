@@ -15,7 +15,7 @@ public class LListSearchUC7 {
         public static void main(String[] args) {
             LListSearchUC7 lists = new LListSearchUC7();
 
-            lists.head = new Node(50);
+            lists.head = new Node(56);
             Node secondNode = new Node(70);
             Node thirdNode = new Node(30);
             lists.head.next = secondNode;
@@ -37,7 +37,7 @@ public class LListSearchUC7 {
 
     }
 
-    //
+
 
     private void print() {
         Node pointer = head;
