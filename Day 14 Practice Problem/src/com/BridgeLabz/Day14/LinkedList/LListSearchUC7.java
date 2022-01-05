@@ -20,8 +20,7 @@ public class LListSearchUC7 {
             Node thirdNode = new Node(30);
             lists.head.next = secondNode;
             secondNode.next = thirdNode;
-            System.out.println("before roving first node in data.");
-            lists.print();
+            System.out.println("List :" );
             lists.print();
             search(lists, 30);
         }
@@ -38,11 +37,7 @@ public class LListSearchUC7 {
 
     }
 
-    private void pop(Node node, LListSearchUC7 lists) {
-        Node courser = head;
-        System.out.println("after removing head node from link list.");
-
-    }
+    //
 
     private void print() {
         Node pointer = head;
