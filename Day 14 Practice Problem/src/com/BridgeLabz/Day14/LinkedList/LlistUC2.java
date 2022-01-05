@@ -6,7 +6,9 @@ public class LlistUC2 {
         Use Case 2
         */
         // declaring type of head
-        Node head;
+        public Node head;
+
+
         // create node class
         class Node{
             int data;
@@ -27,6 +29,7 @@ public class LlistUC2 {
             else{
                 newNode.next = head;
                 head = newNode;
+
             }
         }
         //printing element of linked list
