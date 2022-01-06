@@ -19,7 +19,7 @@ public class BubbleSortGeneric {
 
     public static void main(String[] args) {
         BubbleSortGeneric sort = new BubbleSortGeneric();
-        String sentence = "Hello, Welcome to bubble sort generic method";
+        String sentence = "Hello Welcome to bubble sort generic method";
         String array[] = sentence.toLowerCase().split(",");
         sort.bubbleSort(array);
         for (int i = 0; i < array.length; i++) {
