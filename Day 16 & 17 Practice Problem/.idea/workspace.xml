@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd9e7d1d-2f47-4279-9287-4f425fcc41f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/BridgeLabz/AlgorithmProgram/MessageDemonstration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BridgeLabz/AlgorithmProgram/MessageDemonstration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/Day 16 &amp; 17 Practice Problem.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/src/com/BridgeLabz/Day_16_17/BubbleSort/BubbleSort.java" beforeDir="false" />
@@ -42,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.FindingNumber">
+  <component name="RunManager" selected="Application.MessageDemonstration">
     <configuration name="BubbleSortMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.BridgeLabz.AlgorithmProgram.BubbleSort.BubbleSortMain" />
       <module name="Day 16 &amp; 17 Practice Problem" />
@@ -82,6 +82,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageDemonstration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.BridgeLabz.AlgorithmProgram.MessageDemonstration" />
+      <module name="Day 16 &amp; 17 Practice Problem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.BridgeLabz.AlgorithmProgram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrimeNumberCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.BridgeLabz.AlgorithmProgram.PrimeNumberCheck" />
       <module name="Day 16 &amp; 17 Practice Problem" />
@@ -97,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MessageDemonstration" />
         <item itemvalue="Application.FindingNumber" />
         <item itemvalue="Application.PrimeNumberCheck" />
         <item itemvalue="Application.InsertionSortingMain" />
