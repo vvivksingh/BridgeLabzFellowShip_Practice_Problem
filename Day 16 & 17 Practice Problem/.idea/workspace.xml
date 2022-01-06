@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd9e7d1d-2f47-4279-9287-4f425fcc41f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Day 16 &amp; 17 Practice Problem/com/BridgeLabz/AlgorithmProgram/PerformTask.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Day 16 &amp; 17 Practice Problem/com/BridgeLabz/AlgorithmProgram/TaskInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Day 16 &amp; 17 Practice Problem/com/BridgeLabz/AlgorithmProgram/MessageDemonstration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day 16 &amp; 17 Practice Problem/com/BridgeLabz/AlgorithmProgram/MessageDemonstration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/Day 16 &amp; 17 Practice Problem.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/src/com/BridgeLabz/Day_16_17/BubbleSort/BubbleSort.java" beforeDir="false" />
@@ -45,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.BinarySearch">
+  <component name="RunManager" selected="Application.Permutation">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.BridgeLabz.AlgorithmProgram.BinarySearch.BinarySearch" />
       <module name="Day 16 &amp; 17 Practice Problem" />
@@ -98,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumberCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.BridgeLabz.AlgorithmProgram.PrimeNumberCheck" />
+    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.BridgeLabz.AlgorithmProgram.Permutation" />
       <module name="Day 16 &amp; 17 Practice Problem" />
       <extension name="coverage">
         <pattern>
@@ -113,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Permutation" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.PerformTask" />
         <item itemvalue="Application.MessageDemonstration" />
         <item itemvalue="Application.FindingNumber" />
-        <item itemvalue="Application.PrimeNumberCheck" />
       </list>
     </recent_temporary>
   </component>
