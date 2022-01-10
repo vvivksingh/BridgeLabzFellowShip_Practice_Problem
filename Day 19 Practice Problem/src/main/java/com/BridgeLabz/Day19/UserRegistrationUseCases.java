@@ -36,10 +36,18 @@ public class UserRegistrationUseCases {
         System.out.println(Pattern.matches("[0-9]{2}[\\s][0-9]{10}", phNum));
     }
     //Use case 5
-    public void PasswordRule1(){
+    public void PasswordRuleMinimum8Character(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter password : ");
         String password = scanner.next();
         System.out.println(Pattern.matches("^[a-zA-Z0-9].{7,}$", password));
     }
+    //Use Case 6
+    public  void PasswordRuleAtleastOneUpperCase(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[A-Z]).{8,}$", password));
+    }
+
 }
