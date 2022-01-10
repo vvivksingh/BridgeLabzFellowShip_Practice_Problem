@@ -16,6 +16,9 @@ public class UserRegistrationUseCases {
     }
     //Use Case 2
     public void ValidateLastName(){
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter last Name : ");
+        String lastName = scanner.next();
+        System.out.println(Pattern.matches("[A-Z][a-z]{2,}", lastName));
     }
 }
