@@ -9,5 +9,6 @@ public class UserRegistrationMain {
         obj.ValidateMobileNoFormat();
         obj.PasswordRuleMinimum8Character();
         obj.PasswordRuleAtleastOneUpperCase();
+        obj.PasswordRuleAtleastOneNumericValue();
     }
 }

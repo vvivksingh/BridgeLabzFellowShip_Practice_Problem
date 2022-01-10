@@ -49,5 +49,12 @@ public class UserRegistrationUseCases {
         String password = scanner.next();
         System.out.println(Pattern.matches("^(?=.*[A-Z]).{8,}$", password));
     }
+    //Use case 7
+    public void PasswordRuleAtleastOneNumericValue(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$", password));
+    }
 
 }
