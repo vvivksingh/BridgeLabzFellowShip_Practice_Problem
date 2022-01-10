@@ -10,5 +10,6 @@ public class UserRegistrationMain {
         obj.PasswordRuleMinimum8Character();
         obj.PasswordRuleAtleastOneUpperCase();
         obj.PasswordRuleAtleastOneNumericValue();
+        obj.PasswordRuleExactlyOneSpecialCharacter();
     }
 }
