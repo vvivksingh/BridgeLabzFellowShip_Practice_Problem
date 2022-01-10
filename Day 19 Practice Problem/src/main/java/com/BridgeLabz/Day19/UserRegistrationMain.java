@@ -7,5 +7,6 @@ public class UserRegistrationMain {
         obj.ValidateLastName();
         obj.ValidateEmail();
         obj.ValidateMobileNoFormat();
+        obj.PasswordRule1();
     }
 }

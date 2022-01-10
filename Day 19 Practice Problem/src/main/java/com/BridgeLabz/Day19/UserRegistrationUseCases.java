@@ -35,4 +35,11 @@ public class UserRegistrationUseCases {
         String phNum = scanner.nextLine();
         System.out.println(Pattern.matches("[0-9]{2}[\\s][0-9]{10}", phNum));
     }
+    //Use case 5
+    public void PasswordRule1(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter password : ");
+        String password = scanner.next();
+        System.out.println(Pattern.matches("^[a-zA-Z0-9].{7,}$", password));
+    }
 }
