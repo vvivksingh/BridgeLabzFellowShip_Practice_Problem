@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd9e7d1d-2f47-4279-9287-4f425fcc41f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/BridgeLabz/AlgorithmProgram/BubbleSortGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/BridgeLabz/AlgorithmProgram/BubbleSortGeneric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/Day 16 &amp; 17 Practice Problem.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day 16_17 Practice Problem/src/com/BridgeLabz/Day_16_17/BubbleSort/BubbleSort.java" beforeDir="false" />
