@@ -6,5 +6,6 @@ public class UserRegistrationMain {
         obj.ValidateFirstName();
         obj.ValidateLastName();
         obj.ValidateEmail();
+        obj.ValidateMobileNoFormat();
     }
 }
