@@ -11,5 +11,6 @@ public class UserRegistrationMain {
         obj.PasswordRuleAtleastOneUpperCase();
         obj.PasswordRuleAtleastOneNumericValue();
         obj.PasswordRuleExactlyOneSpecialCharacter();
+        obj.ClearAllEmailSample();
     }
 }
