@@ -21,4 +21,12 @@ public class UserRegistrationUseCases {
         String lastName = scanner.next();
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", lastName));
     }
+    //Use Case 3
+    public void ValidateEmail(){
+        Scanner scanner = new Scanner(System.in);
+        String email = "abc.xyz@bl.co.in";
+        System.out.println("Email : " + email);
+        System.out.println(Pattern.matches("^(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$", email));
+    }
+
 }

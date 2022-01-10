@@ -5,5 +5,6 @@ public class UserRegistrationMain {
         UserRegistrationUseCases obj = new UserRegistrationUseCases();
         obj.ValidateFirstName();
         obj.ValidateLastName();
+        obj.ValidateEmail();
     }
 }
