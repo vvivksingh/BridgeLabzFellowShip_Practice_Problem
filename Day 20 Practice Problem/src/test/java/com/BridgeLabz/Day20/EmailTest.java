@@ -1,8 +1,13 @@
 package com.BridgeLabz.Day19;
 
+//import org.junit.jupiter.api.BeforeAll;
+//import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Assertions;
+//import java.util.Arrays;
+//import java.util.Collection;
+
 import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+
 import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
@@ -10,11 +15,13 @@ import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
 
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /**
  * Performing test cases for Email validation.
 */
 
-@RunWith(Parameterized.class)
 public class EmailTest {
     private String emailTest;
     private boolean expectedResult;
