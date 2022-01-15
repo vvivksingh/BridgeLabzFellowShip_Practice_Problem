@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.BridgeLabz.AddBookLambda.UserRegistrationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-01-15T17:37:28" hostname="VIVEK" time="0.071">
+  <properties/>
+  <testcase name="emailTestShouldReturnTrue()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.031"/>
+  <testcase name="passwordTestShouldReturnFalse()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.003"/>
+  <testcase name="phoneTestShouldReturnTrue()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.002"/>
+  <testcase name="lastNameTestShouldReturnTrue()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.002"/>
+  <testcase name="firstNameTestShouldReturnFalse()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.002"/>
+  <testcase name="passwordTestShouldReturnTrue()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.001"/>
+  <testcase name="emailTestShouldReturnFalse()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.002"/>
+  <testcase name="lastNameTestShouldReturnFalse()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.001"/>
+  <testcase name="phoneTestShouldReturnFalse()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.012"/>
+  <testcase name="firstNameTestShouldReturnTrue()" classname="com.BridgeLabz.AddBookLambda.UserRegistrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
