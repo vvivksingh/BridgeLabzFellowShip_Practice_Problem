@@ -1,7 +1,0 @@
-(Employee Details from payroll-file.txt
-CEmployeeId: 1, EmployeeName: Jeff Bezos, EmployeeSalary: 100000.0
-CEmployeeId: 2, EmployeeName: Bill Gates, EmployeeSalary: 200000.0
-HEmployeeId: 3, EmployeeName: Mark Zuckerberg, EmployeeSalary: 300000.0
-CEmployeeId: 1, EmployeeName: Jeff Bezos, EmployeeSalary: 100000.0
-CEmployeeId: 2, EmployeeName: Bill Gates, EmployeeSalary: 200000.0
-HEmployeeId: 3, EmployeeName: Mark Zuckerberg, EmployeeSalary: 300000.0

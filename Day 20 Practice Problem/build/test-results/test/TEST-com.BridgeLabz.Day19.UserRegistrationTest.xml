@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.BridgeLabz.Day19.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-10T14:56:00" hostname="VIVEK" time="0.039">
-  <properties/>
-  <testcase name="givenLastName_whenProper_ShouldReturnTrue()" classname="com.BridgeLabz.Day19.UserRegistrationTest" time="0.039"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

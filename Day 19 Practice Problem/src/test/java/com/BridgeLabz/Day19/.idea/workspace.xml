@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="990ed827-1c6b-4565-aa25-46295feb5c5a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/EmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/EmailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day19/InvalidUserInputException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day20/InvalidUserInputException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day19/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day20/UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day19/UserRegistrationInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day20/UserRegistrationInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day19/UserRegistrationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day20/UserRegistrationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day19/UserRegistrationUseCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day20/UserRegistrationUseCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day19/ValidateEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/main/java/com/BridgeLabz/Day20/ValidateEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/test/java/com/BridgeLabz/Day19/EmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/test/java/com/BridgeLabz/Day20/EmailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/test/java/com/BridgeLabz/Day19/UserRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Day 20 Practice Problem/src/test/java/com/BridgeLabz/Day20/UserRegistrationTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23Xp99BMOLAl5f8l09WKpWCxykn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="990ed827-1c6b-4565-aa25-46295feb5c5a" name="Changes" comment="" />
+      <created>1641890132879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641890132879</updated>
+    </task>
+    <servers />
+  </component>
+</project>

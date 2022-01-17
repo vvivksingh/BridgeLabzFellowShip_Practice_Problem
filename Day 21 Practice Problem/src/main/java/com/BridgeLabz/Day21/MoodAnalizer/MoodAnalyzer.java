@@ -20,4 +20,7 @@ public class MoodAnalyzer {
             return "Happy";
         }
     }
+    public static void main(String[] args){
+        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in bad Mood");
+    }
 }

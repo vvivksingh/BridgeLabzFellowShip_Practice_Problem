@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day19;
+package com.BridgeLabz.Day20;
 
 @FunctionalInterface
 public interface UserRegistrationInterface {

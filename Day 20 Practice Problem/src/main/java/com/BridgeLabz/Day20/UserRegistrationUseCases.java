@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day19;
+package com.BridgeLabz.Day20;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;

@@ -1,4 +1,4 @@
-package com.BridgeLabz.Day19;
+package com.BridgeLabz.Day20;
 
 public class UserRegistrationMain {
     public static void main(String[] args) {

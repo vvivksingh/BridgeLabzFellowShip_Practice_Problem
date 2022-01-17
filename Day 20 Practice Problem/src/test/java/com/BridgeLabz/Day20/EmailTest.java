@@ -1,22 +1,15 @@
-package com.BridgeLabz.Day19;
+package com.BridgeLabz.Day20;
 
-//import org.junit.jupiter.api.BeforeAll;
-//import org.junit.jupiter.api.Test;
-//import org.junit.jupiter.api.Assertions;
-//import java.util.Arrays;
-//import java.util.Collection;
 
 import org.junit.Before;
-
-import org.junit.runners.Parameterized;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.assertEquals;
 
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Performing test cases for Email validation.
@@ -37,7 +30,7 @@ public class EmailTest {
         validateEmail = new ValidateEmail();
     }
 
-    @Parameterized.Parameters
+    @Parameters
     public static Collection data() {
         return Arrays.asList(new Object[][] {
                 {"abc@yahoo.com", true},
@@ -67,7 +60,7 @@ public class EmailTest {
 
     @Test
     public void givenEmailAsVar_ShouldReturnTrueorFalse() {
-        assertEquals(expectedResult, validateEmail.validateEmail(emailTest));
+        Assertions.assertEquals(expectedResult, validateEmail.validateEmail(emailTest));
     }
 
 }
