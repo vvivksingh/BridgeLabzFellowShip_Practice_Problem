@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-01-31T15:46:10" hostname="VIVEK" time="0.061">
+  <properties/>
+  <testcase name="givenDistanceAndTime_WhenPremiumAndLessThanMinimum_ShouldReturnTotalFare()" classname="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" time="0.037"/>
+  <testcase name="givenUserID_ShouldReturnListOfRides()" classname="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" time="0.011"/>
+  <testcase name="givenDistanceAndTime_WhenLessThanMinimumFare_ShouldReturnTotalFare()" classname="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" time="0.001"/>
+  <testcase name="givenDistanceAndTime_WhenPremium_ShouldReturnTotalFare()" classname="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" time="0.001"/>
+  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare()" classname="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" time="0.001"/>
+  <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary()" classname="com.BridgeLabz.CabInvoiceGenerator.CabInvoiceGeneratorTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
