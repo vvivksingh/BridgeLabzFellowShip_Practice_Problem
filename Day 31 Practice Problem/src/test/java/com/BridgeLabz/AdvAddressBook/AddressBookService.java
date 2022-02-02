@@ -32,6 +32,23 @@ public class AddressBookService{
         return contact;
     }
 
+    public boolean deleteContact(int phoneNumber) {
+
+        for (int i = 0; i < allContacts.length; i++)
+        {
+            if(allContacts[i] != null && allContacts[i].getPhoneNumber() == phoneNumber )
+            {
+                for (int j=i; j < allContacts.length-2 ; j++)
+                {
+                    allContacts[j] = allContacts[j+1];
+                }
+                System.out.println("Contact deleted SuccessFully");
+                return true;
+            }
+
+        }
+        return false;
+    }
 
     public boolean editContact(int phoneNumber)
     {
