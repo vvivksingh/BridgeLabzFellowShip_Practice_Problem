@@ -1,62 +1,78 @@
 package com.BridgeLabz.AdvAddressBook;
 
+import java.util.HashMap;
+
+import java.util.LinkedList;
 import java.util.Scanner;
 
-public class AddressBookService{
+public class AddressBookService
+{
+    HashMap<String,LinkedList<Contact>> addressBooks = new HashMap<>();
+    LinkedList<Contact> allContacts = new LinkedList<Contact>();
+    Scanner scanner = new Scanner(System.in);
 
-    Contact[] allContacts = new Contact[20];
-    private int index = 0 ;
-
+    //method to add contacts
     public Contact addContact()
     {
-        Scanner scanner = new Scanner(System.in);
+        Contact contact = new Contact();
         System.out.println("Enter First Name");
-        String firstName = scanner.next();
+        contact.setFirstName(scanner.next());
         System.out.println("Enter last Name");
-        String lastName = scanner.next();
+        contact.setLastname(scanner.next());
         System.out.println("Enter address");
-        String address = scanner.next();
+        contact.setAddress(scanner.next());
         System.out.println("Enter City");
-        String city = scanner.next();
+        contact.setCity(scanner.next());
         System.out.println("Enter State");
-        String state = scanner.next();
-        System.out.println("Enter zip");
-        String zip = scanner.next();
+        contact.setState(scanner.next());
+        System.out.println("Enter Pincode");
+        contact.setZip(scanner.next());
         System.out.println("Enter Phone Number");
-        int phoneNumber = scanner.nextInt();
+        contact.setPhoneNumber(scanner.nextInt());
         System.out.println("Enter Email");
-        String email = scanner.next();
-        Contact contact = new Contact( firstName, lastName, address, city, state, zip, phoneNumber, email);
-        allContacts[index++]= contact;
-        System.out.println("New Contact Added Sucessfully");
+        contact.setEmail(scanner.next());
+        System.out.println("Enter Book name to which you have to add contact");
+        String bookName  = scanner.next();
+
+        //checking book already exist
+        if (addressBooks.containsKey(bookName))
+        {
+            //if exist then add contact to list
+            LinkedList<Contact> contactList  =  addressBooks.get(bookName);
+            contactList.add(contact);
+            addressBooks.put(bookName, contactList);
+            System.out.println("New Contact Added Sucessfully");
+        }
+        else
+        {
+            //creating a new book and list
+            allContacts.add(contact);
+            addressBooks.put(bookName,allContacts);
+            System.out.println("New book created and Contact Added Sucessfully");
+        }
+
         return contact;
     }
 
-    public boolean deleteContact(int phoneNumber) {
-
-        for (int i = 0; i < allContacts.length; i++)
+    public boolean deleteContact(int phoneNumber)
+    {
+        for (Contact contact : allContacts)
         {
-            if(allContacts[i] != null && allContacts[i].getPhoneNumber() == phoneNumber )
+            if (contact.getPhoneNumber() == phoneNumber)
             {
-                for (int j=i; j < allContacts.length-2 ; j++)
-                {
-                    allContacts[j] = allContacts[j+1];
-                }
-                System.out.println("Contact deleted SuccessFully");
-                return true;
+                allContacts.remove(contact);
+                return operationStatus(true);
             }
-
         }
-        return false;
+        return operationStatus(false);
     }
 
     public boolean editContact(int phoneNumber)
     {
-        for (int i = 0; i < allContacts.length; i++)
+        for (Contact contact : allContacts)
         {
-            if(allContacts[i] != null && allContacts[i].getPhoneNumber() == phoneNumber )
+            if (contact.getPhoneNumber() == phoneNumber)
             {
-                Scanner scanner = new Scanner(System.in);
                 System.out.println("Enter First Name");
                 String firstName = scanner.next();
                 System.out.println("Enter last Name");
@@ -69,29 +85,37 @@ public class AddressBookService{
                 String state = scanner.next();
                 System.out.println("Enter zip");
                 String zip = scanner.next();
-                allContacts[i].setFirstName(firstName);
-                allContacts[i].setLastname(lastName);
-                allContacts[i].setAddress(address);
-                allContacts[i].setCity(city);
-                allContacts[i].setState(state);
-                allContacts[i].setState(zip);
-                return true;
+                contact.setFirstName(firstName);
+                contact.setLastname(lastName);
+                contact.setAddress(address);
+                contact.setCity(city);
+                contact.setState(state);
+                contact.setState(zip);
+                return operationStatus(true);
             }
         }
-        return false;
+        return operationStatus(false);
     }
 
 
     public void diaplayContacts()
     {
-        for (int i = 0; i < allContacts.length; i++)
+        for (Contact contact : allContacts)
         {
-            if(allContacts[i] != null)
-            {
-                System.out.println(allContacts[i]);
-            }
+            System.out.println(contact);
         }
     }
 
-
+    private static boolean operationStatus(boolean status)
+    {
+        if(status)
+        {
+            System.out.println("Contact Updated Successfully");
+        }
+        else
+        {
+            System.out.println("Contact not found");
+        }
+        return status;
+    }
 }

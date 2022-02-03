@@ -10,17 +10,9 @@ public class Contact {
     private int phoneNumber;
     private String email;
 
-    public Contact(String firstName, String lastname, String address, String city, String state, String zip,
-                   int phoneNumber, String email) {
+    public Contact() {
         super();
-        this.firstName = firstName;
-        this.lastname = lastname;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
+
     }
 
     @Override

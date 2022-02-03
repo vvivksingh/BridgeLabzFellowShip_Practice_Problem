@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class AddressBookMain
 {
+    static Scanner scanner = new  Scanner(System.in);
     public static void main(String[] args)
     {
-        Scanner scanner = new  Scanner(System.in);
         System.out.println("Welcome to Address Book");
         AddressBookService contact = new AddressBookService();
         while (true) {
@@ -21,38 +21,25 @@ public class AddressBookMain
                 case 2:
                     System.out.println("Enter the Phone Number");
                     int phoneNumber = scanner.nextInt();
-                    boolean updated= contact.editContact(phoneNumber);
-                    if(updated)
-                    {
-                        System.out.println("Contact Updated Successfully");
-                    }
-                    else
-                    {
-                        System.out.println("Contact not found");
-                    }
+                    contact.editContact(phoneNumber);
+
                     break;
                 case 3:
                     System.out.println("Enter the Phone Number");
                     int phoneNumberToDelete = scanner.nextInt();
-                    boolean status = contact.deleteContact(phoneNumberToDelete);
-                    if(status)
-                    {
-                        System.out.println("Contact Deleted Successfully");
-                    }
-                    else
-                    {
-                        System.out.println("Contact not found");
-                    }
+                    contact.deleteContact(phoneNumberToDelete);
                     break;
                 case 4:
                     contact.diaplayContacts();
                     break;
-                default:
+                case 5:
                     System.out.println("Thanks For Using Us");
                     System.exit(0);
+                    break;
+                default:
+                    System.out.println("Please Enter Proper Option");
             }
         }
-
     }
 
 }
