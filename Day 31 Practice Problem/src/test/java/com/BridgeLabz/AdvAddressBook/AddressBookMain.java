@@ -22,7 +22,9 @@ public class AddressBookMain
                     + "\n 7 Count of Person on basis Of State or City"
                     + "\n 8 Sort contact on basis of Person name "
                     + "\n 9 Sort On the basis of city,state or Zip"
-                    + "\n 10 Quit"
+                    + "\n 10 write data to file"
+                    + "\n 11 read file"
+                    + "\n 12 Quit"
             );
 
             int userChoice = scanner.nextInt();
@@ -82,6 +84,14 @@ public class AddressBookMain
                     break;
 
                 case 10:
+                    addressBook.writingToFile();
+                    break;
+
+                case 11:
+                    addressBook.readFile();
+                    break;
+
+                case 12:
                     System.out.println("Thanks For Using Us");
                     System.exit(0);
                     break;
