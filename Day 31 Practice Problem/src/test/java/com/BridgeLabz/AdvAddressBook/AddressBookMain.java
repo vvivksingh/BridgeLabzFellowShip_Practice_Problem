@@ -19,7 +19,8 @@ public class AddressBookMain
                     + " \n 4 Display Contact "
                     + "\n 5 Search Person on basis Of State or City "
                     + "\n 6 View Person on basis Of State or City "
-                    + " \n 7 Quit"
+                    + "\n 7 Count of Person on basis Of State or City"
+                    + "\n 8 Quit "
             );
 
             int userChoice = scanner.nextInt();
@@ -62,6 +63,13 @@ public class AddressBookMain
                     break;
 
                 case 7:
+                    System.out.println("Enter the city or state which to be searched");
+                    String searchKeyForCount = scanner.next();
+                    int count = addressBook.searchPerson(searchKeyForCount);
+                    System.out.println("Total Contacts are : "+count+ " in "+ searchKeyForCount);
+                    break;
+
+                case 8:
                     System.out.println("Thanks For Using Us");
                     System.exit(0);
                     break;

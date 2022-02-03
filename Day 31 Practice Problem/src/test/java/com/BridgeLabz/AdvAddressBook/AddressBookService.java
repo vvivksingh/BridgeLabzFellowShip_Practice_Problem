@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class AddressBookService
 {
+    //address books hash map
     HashMap<String,LinkedList<Contact>> addressBooks = new HashMap<>();
     Scanner scanner = new Scanner(System.in);
 
@@ -125,8 +126,9 @@ public class AddressBookService
     }
 
     //method to search multiple person in city and state
-    public void searchPerson(String searchKey)
+    public int searchPerson(String searchKey)
     {
+        int count = 0;
         for (String bookName : addressBooks.keySet())
         {
             LinkedList<Contact> contactList  =  addressBooks.get(bookName);
@@ -135,10 +137,11 @@ public class AddressBookService
                 if (contact.getCity().equals(searchKey) ||  contact.getState().equals(searchKey) )
                 {
                     System.out.println(contact.getFirstName() + ""+ contact.getLastname());
-
+                    count++;
                 }
             }
         }
+        return count;
     }
 
 
@@ -181,6 +184,7 @@ public class AddressBookService
         }
     }
 
+    //method to view person based on state or city
     public void viewPerson(String viewKey)
     {
         for (String bookName : addressBooks.keySet())
