@@ -9,7 +9,6 @@ public class AddressBookService
 {
     HashMap<String,LinkedList<Contact>> addressBooks = new HashMap<>();
     Scanner scanner = new Scanner(System.in);
-    LinkedList<Contact> allContacts2 = new LinkedList<Contact>();
 
     //method to add contacts
     public Contact addContact()
@@ -53,44 +52,54 @@ public class AddressBookService
         return contact;
     }
 
-    public boolean deleteContact(int phoneNumber)
+    //method to delete contact
+    public boolean deleteContact(int phoneNumber,String bookName)
     {
-        for (Contact contact : allContacts2)
+        if (addressBooks.containsKey(bookName))
         {
-            if (contact.getPhoneNumber() == phoneNumber)
+            LinkedList<Contact> contactList  =  addressBooks.get(bookName);
+            for (Contact contact : contactList)
             {
-                allContacts2.remove(contact);
-                return operationStatus(true);
+                if (contact.getPhoneNumber() == phoneNumber)
+                {
+                    contactList.remove(contact);
+                    return operationStatus(true);
+                }
             }
         }
         return operationStatus(false);
     }
 
-    public boolean editContact(int phoneNumber)
+    //method to edit contact
+    public boolean editContact(int phoneNumber,String bookName)
     {
-        for (Contact contact : allContacts2)
+        if (addressBooks.containsKey(bookName))
         {
-            if (contact.getPhoneNumber() == phoneNumber)
+            LinkedList<Contact> contactList  =  addressBooks.get(bookName);
+            for (Contact contact : contactList)
             {
-                System.out.println("Enter First Name");
-                String firstName = scanner.next();
-                System.out.println("Enter last Name");
-                String lastName = scanner.next();
-                System.out.println("Enter address");
-                String address = scanner.next();
-                System.out.println("Enter City");
-                String city = scanner.next();
-                System.out.println("Enter State");
-                String state = scanner.next();
-                System.out.println("Enter zip");
-                String zip = scanner.next();
-                contact.setFirstName(firstName);
-                contact.setLastname(lastName);
-                contact.setAddress(address);
-                contact.setCity(city);
-                contact.setState(state);
-                contact.setState(zip);
-                return operationStatus(true);
+                if (contact.getPhoneNumber() == phoneNumber)
+                {
+                    System.out.println("Enter First Name");
+                    String firstName = scanner.next();
+                    System.out.println("Enter last Name");
+                    String lastName = scanner.next();
+                    System.out.println("Enter address");
+                    String address = scanner.next();
+                    System.out.println("Enter City");
+                    String city = scanner.next();
+                    System.out.println("Enter State");
+                    String state = scanner.next();
+                    System.out.println("Enter zip");
+                    String zip = scanner.next();
+                    contact.setFirstName(firstName);
+                    contact.setLastname(lastName);
+                    contact.setAddress(address);
+                    contact.setCity(city);
+                    contact.setState(state);
+                    contact.setState(zip);
+                    return operationStatus(true);
+                }
             }
         }
         return operationStatus(false);
@@ -115,6 +124,23 @@ public class AddressBookService
         }
     }
 
+    //method to search multiple person in city and state
+    public void searchPerson(String searchKey)
+    {
+        for (String bookName : addressBooks.keySet())
+        {
+            LinkedList<Contact> contactList  =  addressBooks.get(bookName);
+            for (Contact contact : contactList)
+            {
+                if (contact.getCity().equals(searchKey) ||  contact.getState().equals(searchKey) )
+                {
+                    System.out.println(contact.getFirstName() + ""+ contact.getLastname());
+
+                }
+            }
+        }
+    }
+
 
 
     //method to get operation status
@@ -122,7 +148,7 @@ public class AddressBookService
     {
         if(status)
         {
-            System.out.println("Contact Updated Successfully");
+            System.out.println("Operation  Successfully");
         }
         else
         {
