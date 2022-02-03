@@ -180,4 +180,21 @@ public class AddressBookService
             System.out.println("Contact already exsist");
         }
     }
+
+    public void viewPerson(String viewKey)
+    {
+        for (String bookName : addressBooks.keySet())
+        {
+            LinkedList<Contact> contactList  =  addressBooks.get(bookName);
+            for (Contact contact : contactList)
+            {
+                if (contact.getCity().equals(viewKey) ||  contact.getState().equals(viewKey) )
+                {
+                    System.out.println(contact);
+
+                }
+            }
+        }
+
+    }
 }
